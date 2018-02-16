@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ایجاد آگهی"
+                android:layout_gravity="center"
+                android:textColor="#000000"
+                android:textSize="22dp"
+                android:layout_margin="8dp"
+                />
+
+            <android.support.v7.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_marginLeft="100dp"
+                android:hint="نام کالا"
+                android:id="@+id/ActivityAdd_edt_name"
+                android:layout_height="wrap_content" />
+            <android.support.v7.widget.AppCompatSpinner
+                android:layout_gravity="right"
+                android:textAlignment="center"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="100dp"
+                android:layout_width="match_parent"
+                android:id="@+id/activityAdd_sp_type"
+                android:layoutDirection="rtl"
+                android:gravity="right"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.AppCompatSpinner>
+            <android.support.v7.widget.AppCompatSpinner
+                android:layout_marginTop="8dp"
+                android:layoutDirection="rtl"
+                android:layout_width="match_parent"
+                android:id="@+id/activityAdd_sp_subtype"
+                android:textDirection="rtl"
+                android:gravity="right"
+                android:layout_marginLeft="100dp"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.AppCompatSpinner>
+            <android.support.v7.widget.AppCompatSpinner
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layoutDirection="rtl"
+                android:id="@+id/activityAdd_sp_dimension"
+                android:textDirection="rtl"
+                android:gravity="right"
+                android:layout_marginLeft="100dp"
+                android:layout_height="wrap_content">
+            </android.support.v7.widget.AppCompatSpinner>
+            <android.support.v7.widget.AppCompatSpinner
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layoutDirection="rtl"
+                android:id="@+id/activityAdd_sp_colors"
+                android:textDirection="rtl"
+                android:gravity="right"
+                android:layout_marginLeft="100dp"
+                android:layout_height="wrap_content">
+            </android.support.v7.widget.AppCompatSpinner>
+            <android.support.v7.widget.AppCompatSpinner
+                android:layout_marginTop="8dp"
+                android:layoutDirection="rtl"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="100dp"
+                android:id="@+id/activityAdd_sp_technology"
+                android:textDirection="rtl"
+                android:gravity="right"
+                android:layout_height="wrap_content">
+            </android.support.v7.widget.AppCompatSpinner>
+            <android.support.v7.widget.AppCompatSpinner
+                android:layout_marginTop="8dp"
+                android:layoutDirection="rtl"
+                android:layout_width="match_parent"
+                android:id="@+id/activityAdd_sp_application"
+                android:textDirection="rtl"
+                android:layout_marginLeft="100dp"
+                android:gravity="right"
+                android:layout_height="wrap_content">
+            </android.support.v7.widget.AppCompatSpinner>
+            <android.support.v7.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:hint="قیمت"
+
+                android:layout_marginLeft="100dp"
+                android:id="@+id/ActivityAdd_edt_price"
+                android:layout_height="wrap_content" />
+            <android.support.v7.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_marginLeft="100dp"
+                android:hint="مشخصات آگهی دهنده "
+                android:id="@+id/ActivityAdd_edt_profileInfo"
+                android:layout_height="wrap_content" />
+
+            <android.support.v7.widget.AppCompatEditText
+                android:layout_marginLeft="100dp"
+                android:layout_width="match_parent"
+                android:hint="توضیحات"
+                android:id="@+id/ActivityAdd_edt_description"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:elevation="6dp"
+                android:id="@+id/ActivityAdd_btn_ok"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ثبت"/>
+
+        </LinearLayout>
+    </ScrollView>
+    <android.support.design.widget.BottomNavigationView
+        android:layout_width="match_parent"
+        android:id="@+id/activityAdd_bnv_bottomNavigation"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/colorPrimary"
+        app:itemIconTint="#ffffff"
+        app:itemTextColor="#ffffff"
+        app:menu="@menu/bottom_navigation" >
+
+    </android.support.design.widget.BottomNavigationView>
+</LinearLayout>

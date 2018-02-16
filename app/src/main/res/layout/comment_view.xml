@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_margin="4dp"
+        android:layout_width="match_parent"
+        android:gravity="right"
+        android:orientation="vertical"
+        android:background="@drawable/shape_comment"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/comment_view_txt_name"
+            android:layout_marginRight="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="نظر از : علیرضازمانیان"
+            />
+        <LinearLayout
+            android:gravity="right"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+
+            <android.support.v7.widget.AppCompatRatingBar
+                android:id="@+id/comment_view_doctor_rat"
+                style="@style/Base.Widget.AppCompat.RatingBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:rating="2" />
+            <TextView
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="امتیازداده شده"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/comment_view_txt_text"
+            android:layout_marginRight="18dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="10"
+            android:text=" سنگ محکم و خوبیه"
+            />
+    </LinearLayout>
+</LinearLayout>

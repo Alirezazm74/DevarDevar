@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#f4e5e1"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/appCompatImageView"
+                android:layout_width="match_parent"
+                android:layout_height="150dip"
+                android:layout_margin="8dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/antic_stone" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:background="#c5c3c3"
+                android:layout_height="2dp" />
+            <LinearLayout
+                android:layout_margin="8dp"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="right"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:gravity="right"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="right"
+                        android:text="100000"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:layout_height="wrap_content" />
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="right"
+                        android:text="قیمت : "
+                        android:textSize="18dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:gravity="right"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="right"
+                        android:text="سنگ گرانیت "
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:layout_height="wrap_content" />
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="right"
+                        android:text="نام محصول : "
+                        android:textSize="18dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:background="#c5c3c3"
+                android:layout_height="2dp" />
+            <LinearLayout
+                android:layout_margin="8sp"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:text="توضیحات آگهی :"
+                    android:textSize="16dp"
+                    android:layout_height="wrap_content" />
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="40"
+                    android:text="این محصول دز سال 1395 برترین محصول از نظر کیفیت ساخت در .........."
+                    android:textSize="18dp"
+                    android:textColor="#000000"
+                    />
+
+
+            </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:background="#c5c3c3"
+                android:layout_height="2dp" />
+            <LinearLayout
+                android:layout_margin="8dp"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:gravity="right"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="مشخصات آگهی دهنده : "
+                    android:textSize="16dp"
+                    />
+                <LinearLayout
+                    android:gravity="right"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:layout_width="100dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/men1"
+                        android:layout_height="100dp"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:background="#c5c3c3"
+                android:layout_height="2dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <LinearLayout
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:gravity="right"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="نظرات کاربران : "
+            android:textSize="16dp"
+            />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+
+        <include layout="@layout/comment_view" />
+        <include layout="@layout/comment_view" />
+        <include layout="@layout/comment_view" />
+        <include layout="@layout/comment_view" />
+        <include layout="@layout/comment_view" />
+        <include layout="@layout/comment_view" />
+        <include layout="@layout/comment_view" />
+        <include layout="@layout/comment_view" />
+        <include layout="@layout/comment_view" />
+        <include layout="@layout/comment_view" />
+        <include layout="@layout/comment_view" />
+        </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:background="#c5c3c3"
+        android:layout_height="2dp" />
+
+    <LinearLayout
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="right"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:textSize="16dp"
+            android:layout_height="wrap_content"
+            android:text="محصولات مشابه : "/>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:background="#c5c3c3"
+        android:layout_height="2dp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

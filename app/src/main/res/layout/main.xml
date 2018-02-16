@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.navan.alireza.devardevar.MainActivity">
+    <LinearLayout
+        android:layout_margin="8dp"
+        android:gravity="right"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:visibility="gone"
+            android:text="جست و جوي سريع :"/>
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/ActivityMain_edt_search"
+            android:background="@drawable/shape"
+            style="edit"
+            android:lines="1"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_search_black_24dp"
+            android:drawablePadding="5dp"
+            android:hint="Search"
+            />
+    </LinearLayout>
+    <!--cليست طبقه بندي ها -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:background="#e8e5e5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <android.support.design.widget.TabLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </android.support.design.widget.TabLayout>
+            </LinearLayout>
+
+        </HorizontalScrollView>
+    </LinearLayout>
+
+    <!--ليست مصولات -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
+
+
+        <LinearLayout
+            android:id="@+id/ActivityMain_ln_kalaha"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/list_kala"
+                tools:listitem="@layout/kala"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    <android.support.design.widget.BottomNavigationView
+        android:layout_width="match_parent"
+        android:id="@+id/activityMain_bnv_bottomNavigation"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/colorPrimary"
+        app:itemIconTint="#ffffff"
+        app:itemTextColor="#ffffff"
+        android:layout_gravity="end"
+        app:menu="@menu/bottom_navigation" >
+
+    </android.support.design.widget.BottomNavigationView>
+</LinearLayout>
